@@ -51,6 +51,7 @@ public class MeetingService {
     }
 
     User creator = creatorOpt.get();
+
     Meeting meeting = new Meeting();
     meeting.setName(createMeetingRequestDto.getName());
     meeting.setDescription(createMeetingRequestDto.getDescription());
@@ -59,7 +60,6 @@ public class MeetingService {
     meeting.setCreator(creator);
 
     meetingRepository.save(meeting);
-
     return new MeetingResponseDto(meeting.getId(), meeting.getName(), meeting.getDescription(),
         meeting.getMaxParticipants(), meeting.getCurrentParticipants());
   }

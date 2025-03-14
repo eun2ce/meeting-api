@@ -8,12 +8,14 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Schema(description = "모임 정보를 담고 있는 엔티티")
 @Getter
 @Setter
 @Entity
+@NoArgsConstructor
 public class Meeting {
 
   @Schema(description = "모임 고유 ID", example = "1")

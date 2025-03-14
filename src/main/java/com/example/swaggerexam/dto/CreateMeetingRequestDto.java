@@ -9,12 +9,13 @@ import lombok.Setter;
 @Setter
 public class CreateMeetingRequestDto {
 
-  @Schema(description = "모임 이름", example = "Developers Meeting", requiredMode = Schema.RequiredMode.REQUIRED)
+  @Schema(description = "모임 이름", example = "Developers Meeting")
   private String name;
 
-  @Schema(description = "모임 설명", example = "Weekly coding discussion", requiredMode = Schema.RequiredMode.REQUIRED)
+  @Schema(description = "모임 설명", example = "Weekly coding discussion")
   private String description;
 
-  @Schema(description = "최대 참가 인원", example = "10", requiredMode = Schema.RequiredMode.REQUIRED)
+  @Schema(description = "최대 참가 인원", example = "10")
   private int maxParticipants;
+
 }

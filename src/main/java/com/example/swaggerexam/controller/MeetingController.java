@@ -47,6 +47,12 @@ public class MeetingController {
   public ResponseEntity<MeetingResponseDto> createMeeting(
       @RequestHeader(HttpHeaders.AUTHORIZATION) String authorizationHeader,
       @RequestBody CreateMeetingRequestDto createMeetingRequestDto) {
+
+    System.out.println("✅ Received DTO: " + createMeetingRequestDto);
+    System.out.println("✅ Name: " + createMeetingRequestDto.getName());
+    System.out.println("✅ Description: " + createMeetingRequestDto.getDescription());
+    System.out.println("✅ Max Participants: " + createMeetingRequestDto.getMaxParticipants());
+
     String token = extractTokenFromHeader(authorizationHeader);
     MeetingResponseDto meetingResponse = meetingService.createMeeting(token,
         createMeetingRequestDto);
