@@ -17,5 +17,4 @@ public class CreateMeetingRequestDto {
 
   @Schema(description = "최대 참가 인원", example = "10")
   private int maxParticipants;
-
 }

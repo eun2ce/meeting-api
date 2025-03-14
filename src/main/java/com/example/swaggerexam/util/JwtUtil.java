@@ -10,7 +10,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 @Component
 public class JwtUtil {
-  private static final String SECRET = "my-secret-key";
+  private static final String SECRET = "iEk21fuwZApXlz93750dmW22pw389dPwOk";
   private static final long EXPIRATION_TIME = 1000 * 60 * 60;
   private final ConcurrentHashMap<String, Boolean> invalidTokens = new ConcurrentHashMap<>();
 
