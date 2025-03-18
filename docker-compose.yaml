@@ -12,6 +12,7 @@ services:
       - '3306:3306'
     volumes:
       - './volumes/mysql/default:/var/lib/mysql'
+      - './volumes/mysql/init.sql:/docker-entrypoint-initdb.d/init.sql' # init.sql을 마운트
     command:
       - 'mysqld'
       - '--character-set-server=utf8mb4'

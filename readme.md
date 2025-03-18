@@ -4,10 +4,25 @@ reset api 를 문서화 하여 호출, 테스트 할 수 있도록 합니다.
 
 ## getting started
 
+[시연 영상](https://youtu.be/Z0QlshMnurA?feature=shared)
+
 ### db
 
+#### 생성
+
+`init.sql`에 포함된 테스트용 데이터가 함께 생성됩니다.
+
+```
 ```bash
 $ docker-compose up -d
+```
+
+### 삭제
+
+위에서 생성 된 데이터가 삭제됩니다. (`docker-compose up -d` 커맨드를 사용하여 재 생성이 가능합니다)
+
+```bash
+$ docker-compose down -v
 ```
 
 ### url 접근
