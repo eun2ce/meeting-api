@@ -4,7 +4,7 @@ reset api 를 문서화 하여 호출, 테스트 할 수 있도록 합니다.
 
 ## getting started
 
-[시연 영상](https://youtu.be/Z0QlshMnurA?feature=shared)
+[demo video](https://youtu.be/Z0QlshMnurA?feature=shared)
 
 ### db
 
