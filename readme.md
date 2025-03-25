@@ -1,10 +1,10 @@
 # swagger
 
+[demo video](https://youtu.be/Z0QlshMnurA?feature=shared)
+
 reset api 를 문서화 하여 호출, 테스트 할 수 있도록 합니다.
 
 ## getting started
-
-[demo video](https://youtu.be/Z0QlshMnurA?feature=shared)
 
 ### db
 
